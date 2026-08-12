@@ -1,0 +1,94 @@
+generated: '2026-08-12'
+method: probed
+source: live HTTPS probes of End Game Interactive web properties
+note: >-
+  Every probed path returned 404 on every host. This file records a verified ABSENCE,
+  not a presence — no WellKnown or SecurityTxt pointer is emitted in apis.yml, because
+  End Game Interactive serves none of these documents. End Game Interactive is a consumer
+  game studio (end.gg) with no developer portal, no documented API and no machine-readable
+  contract; the /.well-known/ surface is empty as a result.
+hosts:
+- host: end.gg
+  role: corporate website
+- host: zombsroyale.io
+  role: game property
+- host: zombs.io
+  role: game property
+paths:
+- path: /.well-known/security.txt
+  results:
+  - host: end.gg
+    status: 404
+  - host: zombsroyale.io
+    status: 404
+  - host: zombs.io
+    status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  results:
+  - host: end.gg
+    status: 404
+  - host: zombsroyale.io
+    status: 404
+  - host: zombs.io
+    status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  results:
+  - host: end.gg
+    status: 404
+  - host: zombsroyale.io
+    status: 404
+  - host: zombs.io
+    status: 404
+  file: null
+- path: /.well-known/api-catalog
+  results:
+  - host: end.gg
+    status: 404
+  - host: zombsroyale.io
+    status: 404
+  - host: zombs.io
+    status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  results:
+  - host: end.gg
+    status: 404
+  - host: zombsroyale.io
+    status: 404
+  - host: zombs.io
+    status: 404
+  file: null
+- path: /.well-known/agent-card.json
+  results:
+  - host: end.gg
+    status: 404
+  - host: zombsroyale.io
+    status: 404
+  - host: zombs.io
+    status: 404
+  file: null
+- path: /.well-known/agent.json
+  results:
+  - host: end.gg
+    status: 404
+  - host: zombsroyale.io
+    status: 404
+  - host: zombs.io
+    status: 404
+  file: null
+- path: /llms.txt
+  results:
+  - host: end.gg
+    status: 404
+  - host: zombsroyale.io
+    status: 404
+  - host: zombs.io
+    status: 404
+  file: null
+summary:
+  paths_probed: 8
+  hosts_probed: 3
+  requests: 24
+  hits: 0

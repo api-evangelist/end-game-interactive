@@ -1,8 +1,17 @@
 aid: end-game-interactive
 name: End Game Interactive
-description: 'End Game Interactive is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'End Game Interactive, Inc. (ENDGAME) is a Bellevue, Washington video game
+  studio founded by Yang C. Liu and Luke Zbihlyj that builds free-to-play, cross-platform
+  real-time multiplayer titles for browser, mobile and desktop — including ZombsRoyale.io,
+  Zombs.io, Spinz.io, BOPZ.io, Fishington, Betrayal, Super Squad, Match City Puzzle and
+  Fate Arena. The studio describes itself as technology-driven, running small agile teams
+  against a proprietary "ENDGAME ENGINE" alongside Unity and Unreal, with AI-assisted
+  pipelines for asset creation, animation, sound design and voicelines. It raised a $3M
+  seed round in 2020 from Makers Fund, Supercell, Kevin Lin and Scooter Braun among others.
+  ENDGAME is a consumer game publisher: as of this profile it operates no public developer
+  program, no documented API, and no machine-readable contract on any of its web properties.'
 url: https://raw.githubusercontent.com/api-evangelist/end-game-interactive/refs/heads/main/apis.yml
+image: https://end.gg/asset/image/logo-card.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +21,13 @@ created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Gaming
+- Video Games
+- Game Development
+- Interactive Entertainment
+- Multiplayer
+- Mobile Games
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,52 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/end-game-interactive-domain-security.yml
 - type: Website
+  url: https://end.gg/
+- type: About
+  url: https://end.gg/about
+- type: Support
+  url: https://end.gg/contact
+- type: TermsOfService
+  url: https://end.gg/terms
+- type: PrivacyPolicy
+  url: https://end.gg/privacy
+- type: Press
+  url: https://end.gg/press
+- type: Careers
+  url: https://end.gg/careers
+- type: SecondaryMarket
   url: https://forgeglobal.com/end-game-interactive_stock/
+- type: LLMsTxt
+  url: llms/end-game-interactive-llms.txt
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    End Game Interactive is a consumer game publisher whose only web properties are the
+    end.gg marketing site and its game clients — api.end.gg, developer.end.gg and
+    docs.end.gg do not resolve at all, and end.gg has no developer, API or documentation
+    route in its navigation.
+  evidence:
+  - url: https://end.gg/
+    status: 200
+  - url: https://end.gg/games
+    status: 200
+  - url: https://end.gg/openapi.json
+    status: 404
+  - url: https://end.gg/graphql
+    status: 404
+  - url: https://end.gg/llms.txt
+    status: 404
+  - url: https://end.gg/.well-known/agent-card.json
+    status: 404
+  - url: https://zombsroyale.io/openapi.json
+    status: 404
+  checked: '2026-08-12'
