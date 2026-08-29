@@ -11,6 +11,17 @@ description: 'End Game Interactive, Inc. (ENDGAME) is a Bellevue, Washington vid
   ENDGAME is a consumer game publisher: as of this profile it operates no public developer
   program, no documented API, and no machine-readable contract on any of its web properties.'
 url: https://raw.githubusercontent.com/api-evangelist/end-game-interactive/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://end.gg/asset/image/logo-card.png
 x-type: company
 x-source: harvest:secondary-market
